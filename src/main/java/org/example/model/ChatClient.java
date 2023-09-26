@@ -10,7 +10,7 @@ import java.io.*;
 import java.net.*;
 
 public class ChatClient extends Application {
-    private static final String SERVER_ADDRESS = "172.16.16.161"; // Cambia a la dirección IP del servidor si es necesario
+    private static final String SERVER_ADDRESS = "172.16.16.161";
     private static final int SERVER_PORT = 8080;
     private PrintWriter out;
     private BufferedReader in;
