@@ -148,5 +148,6 @@ public class ChatServer {
                 }
             }
         }
+        System.out.println("Mensaje recibido: " + message);
     }
 }

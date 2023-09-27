@@ -10,7 +10,7 @@ import java.io.*;
 import java.net.*;
 
 public class ChatClient extends Application {
-    private static final String SERVER_ADDRESS = "172.16.16.161";
+    private static final String SERVER_ADDRESS = "172.16.16.115";
     private static final int SERVER_PORT = 8080;
     private PrintWriter out;
     private BufferedReader in;
@@ -90,6 +90,7 @@ public class ChatClient extends Application {
         String message = messageField.getText();
         if (!message.isEmpty()) {
             out.println(message);
+            appendMessage("Yo: " + message);
             messageField.clear();
         }
     }
